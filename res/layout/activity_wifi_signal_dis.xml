@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aricent.wifidistancecal.WifiSignalDis"
+    tools:ignore="MergeRootFrame" >
+
+    <Button
+        android:id="@+id/WifiScan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="400dp"
+        android:text="Wifi Scan" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="398dp"
+        android:fillViewport="true" >
+
+        <TextView
+            android:id="@+id/WifiList"
+            android:layout_width="fill_parent"
+            android:layout_height="398dp"
+            android:background="#FFFF00"
+            android:scrollbars="horizontal"
+            android:textColor="#000" />
+    </ScrollView>
+
+</FrameLayout>
